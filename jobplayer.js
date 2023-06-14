@@ -1544,7 +1544,7 @@ Job.ConfCls.prototype = {
 	fileUrls: {},
 	fileQuality: 'normal', //视频质量 normal/high  默认为normal
 	videoRate: 4, //倍速播放
-	enableVideoRate: false,
+	enableVideoRate: true,
 	finish: false, //是否完成观看
 	autostart: true,  //是否自动开始播放
 	//是否hls, 修复hls拖动卡住
