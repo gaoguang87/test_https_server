@@ -1162,13 +1162,13 @@ window.Job = {
 			if (xml) {
 				var status = Number($(xml.documentElement).find('>status').text());
 				if (status == -1) {
-					Job.player.pause();
+					// Job.player.pause();
 				}
 				if (!Job.conf.historyId) {
 					var historyId = Number($(xml.documentElement).find('>historyId').text());
 					if (historyId) Job.conf.historyId = historyId;
 				}
-				window.onUpdstatus && window.onUpdstatus(status);
+				// window.onUpdstatus && window.onUpdstatus(status);
 			}
 		}).always(function() {
 			st_updating = false;
